@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- my CSS -->
+    <link rel="stylesheet" href="writeup.css">
+    <link rel="stylesheet" href="navbar.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <!-- make it mobile responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Afterglow video player -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/afterglow/latest/afterglow.min.js"></script>
+    <meta charset="utf-8">
+    <title>Follow the money | VR app</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <img src="images/hamburger.svg" class="hamburger" alt="">
+          </button>
+          <a class="navbar-brand" href="/"><img src="images/samee.png" class="logo" alt="" /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <div class="navbar-right">
+            <ul class="nav navbar-nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="resume.html">Resume</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8">
+          <p class="bigText">Follow the money - Maze <br></p>
+          <img src="images/followTheMoney.png" class="coverPic" alt="">
+          <p class="bigText">Introduction <br></p>
+          <p class="normalText">Follow the money is a sleek and simple mobile VR
+            application. Users must navigate through a maze, collect a key,
+            and unlock a gate to reach the end. To move around the maze the user
+            rotates his head and uses his headset’s trigger to teleport via waypoints.
+             The waypoints are placed all around the map and do not lead the user
+             directly to the end of the maze. However, by following the money the
+             user will reach the end in just a few clicks. <br> <br></p>
+           <p class="bigText">Outcome</p>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/5PkyCzRn20g" frameborder="0" allowfullscreen></iframe>
+
+           <p class="bigText">Story of the process <br></p>
+           <p class="normalText">First the maze needed to be modeled. Next was to
+             decide the maze’s path. After a few iterations on both I arrived at a
+             maze of moderate difficulty (1-3 minutes to complete). </p>
+             <img src="images/maze sketch 1.png" class="writeupPics" id="rotate" alt="">
+             <img src="images/maze sketch 2.png" class="writeupPics" id="rotate" alt="">
+           <p class="bigText">User testing outcomes and iteration<br></p>
+           <p class="normalText">Receiving user feedback was crucial to understanding
+             common hurdles to VR navigation. My maze is pretty simple, but poor
+             design initially made it a pain to play. <br>
+              <strong>Lesson 1: VR noobs</strong>
+              <ul>
+                <li class="normalText">The game was given to people through a google cardboard with
+                  my phone inside. Mobile VR with a cardboard only has 3 Degrees of
+                  Freedom, so no positional tracking. That didn’t stop users from
+                  attempting to navigate the maze by physically walking around.</li>
+                <li class="normalText">Solution: I included a set of directions at the beginning to get
+                  them going.</li>
+              </ul>
+              <p class="normalText"><strong>Lesson 2: Where’s the gate?<br></strong></p>
+              <ul>
+                <li class="normalText">“Ugh I just keep moving in circles” was a common remark. Once
+                  the user stepped out of the maze they had no idea what to do.
+                  Following my deceptively placed waypoints they just kept on scaling
+                  the perimeter of the outside of the maze. The final waypoint was
+                  too close to the gate for them to see it.</li>
+                <li class="normalText">Solution: I adjusted the position of the final waypoint and
+                  adjusted the color of the gate and key to be similar to the
+                  waypoints. Users could intuitively tell that interacting with
+                  these objects is promising.</li>
+              </ul>
+              <p class="normalText"><strong>Lesson 3: Didn’t follow the money <br></strong></p>
+              <ul>
+                <li class="normalText">Some users never found out where the money was located so they
+                  couldn’t follow the trail. I stuck to a realistic metaphor and
+                  placed the coins on the ground. To find them the user must arch his
+                  neck downward.</li>
+                <li class="normalText">Solution: I realize this is uncomfortable for the user, but the
+                  majority of them didn’t complain. And besides it provides a healthy
+                  level of difficulty. So I kept it how it is. </li>
+              </ul>
+            </p>
+            <p class="bigText">Conclusion <br></p>
+            <p class="normalText">VR, in terms of adoption, is in its infancy.
+              People don’t use it often enough to understand how to interact with
+              objects or navigate an environment. However even with these obstacles
+              people just love being immersed in an environment. VR is a lot like
+              love: There is only so much one can explain through pictures
+              and words. This project was many of my users’ first experience with VR
+              and my first experience as a VR developer. And just like them I can’t
+              wait to have more. </p>
+        </div>
+        <div class="col-lg-2">
+        </div>
+
+      </div>
+    </div>
+
+
+  </body>
+</html>

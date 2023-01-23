@@ -1,0 +1,35 @@
+/* CSS for my write ups */
+
+.bigText{
+  color: black ;
+  font-family: Avant-Garde, sans-serif;
+  font-weight: bolder;
+  font-size: 36px;
+}
+
+.normalText{
+  color: black ;
+  font-family: Avant-Garde, sans-serif;
+  font-size: 16px;
+}
+
+.writeupPics {
+  max-width: 240px;
+  border-bottom: 1px solid white;
+  image-orientation: from-image;
+}
+
+.coverPic {
+  max-height: 300px;
+}
+
+#rotate {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+
+}

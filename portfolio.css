@@ -1,0 +1,107 @@
+/* stylesheet for my website's portfolio page */
+
+.row-fluid {
+  /*border-top: 1px solid black;*/
+}
+
+.sidePanel {
+  /*border-top: 1px solid black;*/
+}
+
+.sidePanel img {
+  max-width: 200px;
+}
+
+.rightPanel {
+  /*border-top: 1px solid black;
+  border-left: 1px solid black;*/
+}
+
+.gif {
+  /*border-left: 1px solid black;
+  border-top: 1px solid black;*/
+}
+
+.gif img {
+  max-width: 200px;
+}
+
+.greeting {
+  height: 10%;
+  text-align: center;
+  width: 100%;
+
+  margin-bottom: 3vh;
+  margin-left: 0;
+  margin-right: 2px;
+
+  top: 0;
+  left: 0;
+
+  border-right: none;
+  border-left: none;
+}
+
+.greeting h1 {
+  color: black;
+  font-family: Avant-Garde, sans-serif;
+  font-weight: lighter;
+  font-size: 4vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: .1em;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.row-fluid {
+  margin: 0;
+}
+
+.hvr-sink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+  -webkit-transform: translateY(8px);
+  transform: translateY(8px);
+}
+
+.items a:hover {
+  color: #d3d3d3;
+}
+
+/* Grow Shadow */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

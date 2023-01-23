@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mind Palace VR</title>
+    <link rel="stylesheet" href="/writeup.css">
+    <link rel="stylesheet" href="navbar.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <!-- make it mobile responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <img src="images/hamburger.svg" class="hamburger" alt="">
+          </button>
+          <a class="navbar-brand" href="/"><img src="images/samee.png" class="logo" alt="" /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <div class="navbar-right">
+            <ul class="nav navbar-nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="resume.html">Resume</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8">
+          <p class="bigText">Mind Palace VR - Virtual Photo Experience <br></p>
+          <img src="images/mindpalace.png" class="coverPic" alt="">
+          <p class="bigText">Introduction <br></p>
+          <p class="normalText">
+            Packed away in our minds are memories we love and cherish,
+            so I wanted to create a way for you to experience them in the most
+            intimate way yet. A place for you to go to within your mind.
+            Your Mind Palace.
+            <br> <br>
+            Innovation in the photos space has been limited to the hosting side
+            (i.e. Google Photos, Amazon Drive, iCloud). There has been no
+            innovation in photo viewing. By making the first 2D photo viewer in
+            Virtual Reality I can show more photos at full-size than any other
+            platform. Users are surrounded by their photos and can interact
+            with them in a unique, but natural way.
+             <br> <br></p>
+           <p class="bigText">Outcome</p>
+           <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/FIOTcFhshJ4"
+            frameborder="0" allowfullscreen>
+          </iframe>
+          <br>
+          <p class="normalText">Mind Palace VR pulls the most recent photos
+             from your Camera Gallery. A spherical grid is dynamically
+             generated, positioning and angling each photo to be centered
+             in your line of view. Hovering over a photo enlarges it. Clicking
+             on it moves the user smoothly towards it. The user can then choose
+             to move on to another photo or back to the original position. </p>
+             <br>
+           <p class="bigText">Story of the process <br></p>
+           <p class="normalText">A few weeks ago, my mind struggled to produce
+             ideas for VR. Such a new field must be ripe with lucrative
+             opportunities! I just couldn’t get past one idea: Photos for VR.
+             Thus it began.
+           </p>
+           <br>
+             <img src="images/mindpalacesketch1.png" class="writeupPics" id="rotate" alt="">
+             <img src="images/mindpalacesketch2.png" class="writeupPics" id="rotate" alt="">
+             <br>
+           <p class="normalText">
+              <strong>Problem 1: Learning Unity</strong>
+              <br>
+              This first obstacle was easy to traverse. Udacity just opened a
+              Virtual Reality Nanodegree which was essentially a glorified
+              introduction to Unity. And it cost $200. I didn’t have $200 bucks.
+               So I used their 1-week free trial + the Github student’s 4-week
+               free trial. 4 + 1… carry the 3… 5 weeks total! Plenty of time.
+               <br>
+               Learn Unity - Check.
+               <br>
+            </p>
+              <p class="normalText">
+                <strong>Problem 2: Make a photosphere<br></strong>
+                Virtual Reality development is unlike other platforms because
+                of the math. 3D environments make UI design 3x as complicated.
+                After a bit of math, a laser printed protractor (true story),
+                and a couple days of struggle I figured it out. Noted the x,y,z
+                positions and angles. Employed a nested for-loop to create the
+                2D grid and voila - photosphere.
+                <br>
+              </p>
+              <p class="normalText"><strong>Problem 3: User experience design
+                <br></strong>
+                VR design is largely uncharted territory. All the 2D paradigms
+                can be thrown out.
+                <br>
+                The typical photo viewing app works as follows: show a grid of
+                thumbnails of photos, the photo the user clicks on fills the
+                screen, exit the full-screen photo, continue to search.
+                <br>
+                My app works like this: see all of the photos in the grid in
+                full-res, upon fill the user’s view with
+                the photo while maintaining the environment - so the user
+                only has to glance around to see the other photos, allow the
+                user to jump around the grid or view from a distance.
+                <br>
+                This design is totally unique. It keeps the user totally i
+                mmersed and fully in-control. Plus it’s intuitive and quick to master.
+                <br>
+              </p>
+              <p class="normalText"><strong>Problem 4: Size of the grid</strong><br>
+                I initially had a 7x9 grid. 63 photos. That’s a lot. However
+                the user had to tilt their head up-and-down to uncomfortable
+                degrees. Vertical head movement, I learned, is limited while
+                Horizontal head movement is not. So the grid was reduced to 5x7.
+                The user would only have to slightly tilt their heads upwards or
+                sideways to see all the photos.
+                <br>
+              </p>
+
+            <p class="bigText">Conclusion <br></p>
+            <p class="normalText">After a combined total of 3 weeks of work and
+              the help of a couple of friends, Mind Palace VR was launched in
+              the Google Play Store. It also won Google’s Virtual Reality
+              Challenge at Virginia Tech in the category “Most Marketable”.
+              <br>
+              Mind Palace has been the first innovative photo viewing
+              application in a long time. Although it won’t be actively
+               developed further (for now), I’m pumped to take my work in
+               VR/AR/MR to the next level. Many a great experience have yet to
+               be devised and I can’t wait to bring them to existence. </p>
+               <br><br>
+        </div>
+        <div class="col-lg-2">
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
